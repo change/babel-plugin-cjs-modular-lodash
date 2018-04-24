@@ -12,3 +12,16 @@ _map([], x => !!x);
 _identity;
 _isNumber(0);"
 `;
+
+exports[`Transforms methods in files with a monolithic require and removes monolithic require 1`] = `
+"const _map = require('lodash/map');
+
+const _identity = require('lodash/identity');
+
+const _isNumber = require('lodash/isNumber');
+
+_map([], x => x);
+_map([], x => !!x);
+_identity;
+_isNumber(0);"
+`;

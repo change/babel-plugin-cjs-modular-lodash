@@ -11,5 +11,9 @@ function transformFixture(fixturePath) {
 }
 
 test('Transforms calls on global _ properties to modular requires', () => {
-  expect(transformFixture('source.js')).toMatchSnapshot();
+  expect(transformFixture('global.js')).toMatchSnapshot();
+});
+
+test('Transforms methods in files with a monolithic require and removes monolithic require', () => {
+  expect(transformFixture('monolithic_require.js')).toMatchSnapshot();
 });
