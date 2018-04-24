@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "A babel plugin to transform monolithic lodash with modular lodash in apps using commonjs imports",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "jest": "^22.4.3"
+  }
+}
