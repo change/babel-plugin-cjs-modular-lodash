@@ -21,7 +21,12 @@ module.exports = ({ types: t }) => {
 
       // Remove uses of `const _ = require('lodash')`
       VariableDeclarator(path) {
-        const { node: { id: { name }, init } } = path;
+        const {
+          node: {
+            id: { name },
+            init,
+          },
+        } = path;
 
         if (name !== '_') return;
         if (!t.isCallExpression(init)) return;

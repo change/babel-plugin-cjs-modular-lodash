@@ -5,7 +5,6 @@ module.exports = {
 
   globals: {
     expect: true,
-    jest: true,
   },
 
   rules: {
@@ -51,16 +50,6 @@ module.exports = {
         commonjs: true,
       },
     ],
-
-    // Too disruptive to introduce to an existing codebase, also not sure how desirable it is
-    // (testing it in react-fe)
-    // 'prefer-destructuring': 'off',
-
-    // Disable until we can enforce
-    // 'global-require': 'off', // 711 violations
-    // 'prefer-rest-params': 'off', // 332 violations
-    // 'import/newline-after-import': 'off', // 380 violations
-    // 'promise/always-return': 'off', // 451 violations
   },
 
   settings: {
