@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node_modules/.bin/jest",
-    "lint": "node_modules/.bin/eslint ."
+    "lint": "node_modules/.bin/eslint .",
+    "test-and-lint": "npm run lint && npm test"
   },
   "author": "",
   "license": "ISC",
