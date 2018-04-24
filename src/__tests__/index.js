@@ -7,7 +7,7 @@ function transformFixture(fixturePath) {
   return transform(fs.readFileSync(path.join(__dirname, '../../support/fixtures', fixturePath)), {
     babelrc: false,
     plugins: [[plugin, {}]],
-  }).code
+  }).code;
 }
 
 test('Transforms calls on global _ properties to modular requires', () => {

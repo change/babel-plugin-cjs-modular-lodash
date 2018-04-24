@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Transforms calls on global _ properties to modular requires 1`] = `
-"_map([], x => x);
+"const _map = require(\\"lodash/map\\");
+
+const _identity = require(\\"lodash/identity\\");
+
+const _isNumber = require(\\"lodash/isNumber\\");
+
+_map([], x => x);
+_map([], x => !!x);
 _identity;
 _isNumber(0);"
 `;
