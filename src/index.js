@@ -8,7 +8,7 @@ module.exports = ({ types: t }) => {
         enter({ hub: { file } }) {
           lodashMethodsUsed = [];
           file.path.traverse({
-            // Finds uses of _.method and replaces them with _method,
+            // Finds uses of _.method and replaces them with _lodash_method,
             // and records which methods were used in a file so that require
             // statements can be prepended to the file
             MemberExpression(path) {
