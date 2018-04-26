@@ -1,5 +1,5 @@
 module.exports = ({ types: t }) => {
-  const getMethodIdentifier = lodashMethodName => t.identifier(`_${lodashMethodName}`);
+  const getMethodIdentifier = lodashMethodName => t.identifier(`_lodash_${lodashMethodName}`);
   let lodashMethodsUsed;
 
   return {
