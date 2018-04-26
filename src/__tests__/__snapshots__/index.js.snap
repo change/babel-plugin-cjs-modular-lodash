@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Transforms calls on global _ properties to modular requires 1`] = `
-"const _map = require(\\"lodash/map\\");
+"const _lodash_map = require(\\"lodash/map\\");
 
-const _identity = require(\\"lodash/identity\\");
+const _lodash_identity = require(\\"lodash/identity\\");
 
-const _isNumber = require(\\"lodash/isNumber\\");
+const _lodash_isNumber = require(\\"lodash/isNumber\\");
 
-_map([], x => x);
-_map([], x => !!x);
-_identity;
-_isNumber(0);"
+_lodash_map([], x => x);
+_lodash_map([], x => !!x);
+_lodash_identity;
+_lodash_isNumber(0);"
 `;
 
 exports[`Transforms methods in files with a monolithic require and removes monolithic require 1`] = `
-"const _map = require('lodash/map');
+"const _lodash_map = require('lodash/map');
 
-const _identity = require('lodash/identity');
+const _lodash_identity = require('lodash/identity');
 
-const _isNumber = require('lodash/isNumber');
+const _lodash_isNumber = require('lodash/isNumber');
 
-_map([], x => x);
-_map([], x => !!x);
-_identity;
-_isNumber(0);"
+_lodash_map([], x => x);
+_lodash_map([], x => !!x);
+_lodash_identity;
+_lodash_isNumber(0);"
 `;
