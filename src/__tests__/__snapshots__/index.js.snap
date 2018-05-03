@@ -13,7 +13,7 @@ lodash__identity;
 lodash__isNumber(0);"
 `;
 
-exports[`Transforms deconstructured assignment correctly 1`] = `
+exports[`Transforms deconstructured assignment correctly with es2015 preset 1`] = `
 "var lodash__defaults = require('lodash/defaults');
 
 var _lodash__defaults = lodash__defaults({

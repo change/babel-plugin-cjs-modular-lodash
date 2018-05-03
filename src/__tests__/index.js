@@ -24,6 +24,6 @@ test('Transforms methods in files with a monolithic require and removes monolith
   expect(transformFixture('monolithic_require.js')).toMatchSnapshot();
 });
 
-test('Transforms deconstructured assignment correctly', () => {
+test('Transforms deconstructured assignment correctly with es2015 preset', () => {
   expect(transformFixture('deconstruction.js', { presets: [['es2015', { modules: false }]] })).toMatchSnapshot();
 });
