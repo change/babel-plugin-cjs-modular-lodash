@@ -1,27 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Transforms calls on global _ properties to modular requires 1`] = `
-"const _lodash_map = require(\\"lodash/map\\");
+"const lodash__map = require(\\"lodash/map\\");
 
-const _lodash_identity = require(\\"lodash/identity\\");
+const lodash__identity = require(\\"lodash/identity\\");
 
-const _lodash_isNumber = require(\\"lodash/isNumber\\");
+const lodash__isNumber = require(\\"lodash/isNumber\\");
 
-_lodash_map([], x => x);
-_lodash_map([], x => !!x);
-_lodash_identity;
-_lodash_isNumber(0);"
+lodash__map([], x => x);
+lodash__map([], x => !!x);
+lodash__identity;
+lodash__isNumber(0);"
+`;
+
+exports[`Transforms deconstructured assignment correctly with es2015 preset 1`] = `
+"var lodash__defaults = require('lodash/defaults');
+
+var _lodash__defaults = lodash__defaults({
+  foo: 'a',
+  bar: 'b'
+}, {
+  baz: 'c'
+}),
+    foo = _lodash__defaults.foo,
+    bar = _lodash__defaults.bar,
+    baz = _lodash__defaults.baz;"
 `;
 
 exports[`Transforms methods in files with a monolithic require and removes monolithic require 1`] = `
-"const _lodash_map = require('lodash/map');
+"const lodash__map = require('lodash/map');
 
-const _lodash_identity = require('lodash/identity');
+const lodash__identity = require('lodash/identity');
 
-const _lodash_isNumber = require('lodash/isNumber');
+const lodash__isNumber = require('lodash/isNumber');
 
-_lodash_map([], x => x);
-_lodash_map([], x => !!x);
-_lodash_identity;
-_lodash_isNumber(0);"
+lodash__map([], x => x);
+lodash__map([], x => !!x);
+lodash__identity;
+lodash__isNumber(0);"
 `;
