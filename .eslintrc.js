@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['prettier'],
 
-  extends: ['change-base', 'prettier'],
+  extends: ['change-base', 'change-base/jest', 'prettier'],
 
   globals: {
     expect: true,

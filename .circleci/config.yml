@@ -4,7 +4,7 @@ jobs:
     parallelism: 1
     working_directory: ~/change/babel-plugin-cjs-modular-lodash
     docker:
-      - image: circleci/node:8.9.4
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - restore_cache:
