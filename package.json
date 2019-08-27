@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "A babel plugin to transform monolithic lodash with modular lodash in apps using commonjs imports",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/change/babel-plugin-cjs-modular-lodash"
+  },
   "scripts": {
     "test": "node_modules/.bin/jest",
     "lint": "node_modules/.bin/eslint .",
